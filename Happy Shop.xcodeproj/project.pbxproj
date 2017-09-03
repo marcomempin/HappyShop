@@ -1,0 +1,421 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EAE6C0601F5CC59100BDFAB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE6C05F1F5CC59100BDFAB8 /* AppDelegate.swift */; };
+		EAE6C0621F5CC59100BDFAB8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE6C0611F5CC59100BDFAB8 /* ViewController.swift */; };
+		EAE6C0651F5CC59100BDFAB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAE6C0631F5CC59100BDFAB8 /* Main.storyboard */; };
+		EAE6C0671F5CC59200BDFAB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAE6C0661F5CC59200BDFAB8 /* Assets.xcassets */; };
+		EAE6C06A1F5CC59200BDFAB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAE6C0681F5CC59200BDFAB8 /* LaunchScreen.storyboard */; };
+		EAE6C0751F5CC59200BDFAB8 /* Happy_ShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE6C0741F5CC59200BDFAB8 /* Happy_ShopTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EAE6C0711F5CC59200BDFAB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAE6C0541F5CC59100BDFAB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAE6C05B1F5CC59100BDFAB8;
+			remoteInfo = "Happy Shop";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EAE6C05C1F5CC59100BDFAB8 /* Happy Shop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Happy Shop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAE6C05F1F5CC59100BDFAB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EAE6C0611F5CC59100BDFAB8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EAE6C0641F5CC59100BDFAB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EAE6C0661F5CC59200BDFAB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EAE6C0691F5CC59200BDFAB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EAE6C06B1F5CC59200BDFAB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAE6C0701F5CC59200BDFAB8 /* Happy ShopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Happy ShopTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAE6C0741F5CC59200BDFAB8 /* Happy_ShopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Happy_ShopTests.swift; sourceTree = "<group>"; };
+		EAE6C0761F5CC59200BDFAB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EAE6C0591F5CC59100BDFAB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAE6C06D1F5CC59200BDFAB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EAE6C0531F5CC59100BDFAB8 = {
+			isa = PBXGroup;
+			children = (
+				EAE6C05E1F5CC59100BDFAB8 /* Happy Shop */,
+				EAE6C0731F5CC59200BDFAB8 /* Happy ShopTests */,
+				EAE6C05D1F5CC59100BDFAB8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EAE6C05D1F5CC59100BDFAB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAE6C05C1F5CC59100BDFAB8 /* Happy Shop.app */,
+				EAE6C0701F5CC59200BDFAB8 /* Happy ShopTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EAE6C05E1F5CC59100BDFAB8 /* Happy Shop */ = {
+			isa = PBXGroup;
+			children = (
+				EAE6C05F1F5CC59100BDFAB8 /* AppDelegate.swift */,
+				EAE6C0611F5CC59100BDFAB8 /* ViewController.swift */,
+				EAE6C0631F5CC59100BDFAB8 /* Main.storyboard */,
+				EAE6C0661F5CC59200BDFAB8 /* Assets.xcassets */,
+				EAE6C0681F5CC59200BDFAB8 /* LaunchScreen.storyboard */,
+				EAE6C06B1F5CC59200BDFAB8 /* Info.plist */,
+			);
+			path = "Happy Shop";
+			sourceTree = "<group>";
+		};
+		EAE6C0731F5CC59200BDFAB8 /* Happy ShopTests */ = {
+			isa = PBXGroup;
+			children = (
+				EAE6C0741F5CC59200BDFAB8 /* Happy_ShopTests.swift */,
+				EAE6C0761F5CC59200BDFAB8 /* Info.plist */,
+			);
+			path = "Happy ShopTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EAE6C05B1F5CC59100BDFAB8 /* Happy Shop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAE6C0791F5CC59200BDFAB8 /* Build configuration list for PBXNativeTarget "Happy Shop" */;
+			buildPhases = (
+				EAE6C0581F5CC59100BDFAB8 /* Sources */,
+				EAE6C0591F5CC59100BDFAB8 /* Frameworks */,
+				EAE6C05A1F5CC59100BDFAB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Happy Shop";
+			productName = "Happy Shop";
+			productReference = EAE6C05C1F5CC59100BDFAB8 /* Happy Shop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EAE6C06F1F5CC59200BDFAB8 /* Happy ShopTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAE6C07C1F5CC59200BDFAB8 /* Build configuration list for PBXNativeTarget "Happy ShopTests" */;
+			buildPhases = (
+				EAE6C06C1F5CC59200BDFAB8 /* Sources */,
+				EAE6C06D1F5CC59200BDFAB8 /* Frameworks */,
+				EAE6C06E1F5CC59200BDFAB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAE6C0721F5CC59200BDFAB8 /* PBXTargetDependency */,
+			);
+			name = "Happy ShopTests";
+			productName = "Happy ShopTests";
+			productReference = EAE6C0701F5CC59200BDFAB8 /* Happy ShopTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EAE6C0541F5CC59100BDFAB8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = marcowesome;
+				TargetAttributes = {
+					EAE6C05B1F5CC59100BDFAB8 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					EAE6C06F1F5CC59200BDFAB8 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EAE6C05B1F5CC59100BDFAB8;
+					};
+				};
+			};
+			buildConfigurationList = EAE6C0571F5CC59100BDFAB8 /* Build configuration list for PBXProject "Happy Shop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EAE6C0531F5CC59100BDFAB8;
+			productRefGroup = EAE6C05D1F5CC59100BDFAB8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAE6C05B1F5CC59100BDFAB8 /* Happy Shop */,
+				EAE6C06F1F5CC59200BDFAB8 /* Happy ShopTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EAE6C05A1F5CC59100BDFAB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAE6C06A1F5CC59200BDFAB8 /* LaunchScreen.storyboard in Resources */,
+				EAE6C0671F5CC59200BDFAB8 /* Assets.xcassets in Resources */,
+				EAE6C0651F5CC59100BDFAB8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAE6C06E1F5CC59200BDFAB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EAE6C0581F5CC59100BDFAB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAE6C0621F5CC59100BDFAB8 /* ViewController.swift in Sources */,
+				EAE6C0601F5CC59100BDFAB8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAE6C06C1F5CC59200BDFAB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAE6C0751F5CC59200BDFAB8 /* Happy_ShopTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EAE6C0721F5CC59200BDFAB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAE6C05B1F5CC59100BDFAB8 /* Happy Shop */;
+			targetProxy = EAE6C0711F5CC59200BDFAB8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EAE6C0631F5CC59100BDFAB8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAE6C0641F5CC59100BDFAB8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EAE6C0681F5CC59200BDFAB8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAE6C0691F5CC59200BDFAB8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EAE6C0771F5CC59200BDFAB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EAE6C0781F5CC59200BDFAB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EAE6C07A1F5CC59200BDFAB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Happy Shop/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.marcowesome.Happy-Shop";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EAE6C07B1F5CC59200BDFAB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Happy Shop/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.marcowesome.Happy-Shop";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		EAE6C07D1F5CC59200BDFAB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Happy ShopTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.marcowesome.Happy-ShopTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Happy Shop.app/Happy Shop";
+			};
+			name = Debug;
+		};
+		EAE6C07E1F5CC59200BDFAB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Happy ShopTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.marcowesome.Happy-ShopTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Happy Shop.app/Happy Shop";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EAE6C0571F5CC59100BDFAB8 /* Build configuration list for PBXProject "Happy Shop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAE6C0771F5CC59200BDFAB8 /* Debug */,
+				EAE6C0781F5CC59200BDFAB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAE6C0791F5CC59200BDFAB8 /* Build configuration list for PBXNativeTarget "Happy Shop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAE6C07A1F5CC59200BDFAB8 /* Debug */,
+				EAE6C07B1F5CC59200BDFAB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EAE6C07C1F5CC59200BDFAB8 /* Build configuration list for PBXNativeTarget "Happy ShopTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAE6C07D1F5CC59200BDFAB8 /* Debug */,
+				EAE6C07E1F5CC59200BDFAB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EAE6C0541F5CC59100BDFAB8 /* Project object */;
+}
