@@ -20,6 +20,8 @@
 		EA9D40501F5D4AD9009630FA /* LabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9D404F1F5D4AD9009630FA /* LabelCell.swift */; };
 		EA9D40531F5D4B7A009630FA /* LabelSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9D40521F5D4B7A009630FA /* LabelSectionController.swift */; };
 		EA9D40561F5D4D84009630FA /* LabelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA9D40551F5D4D84009630FA /* LabelCell.xib */; };
+		EA9D40581F5D5320009630FA /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA9D40571F5D5320009630FA /* ProductCell.xib */; };
+		EA9D405A1F5D5477009630FA /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9D40591F5D5477009630FA /* ProductCell.swift */; };
 		EAE6C0601F5CC59100BDFAB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE6C05F1F5CC59100BDFAB8 /* AppDelegate.swift */; };
 		EAE6C0671F5CC59200BDFAB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAE6C0661F5CC59200BDFAB8 /* Assets.xcassets */; };
 		EAE6C06A1F5CC59200BDFAB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAE6C0681F5CC59200BDFAB8 /* LaunchScreen.storyboard */; };
@@ -54,6 +56,8 @@
 		EA9D404F1F5D4AD9009630FA /* LabelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelCell.swift; sourceTree = "<group>"; };
 		EA9D40521F5D4B7A009630FA /* LabelSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSectionController.swift; sourceTree = "<group>"; };
 		EA9D40551F5D4D84009630FA /* LabelCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LabelCell.xib; sourceTree = "<group>"; };
+		EA9D40571F5D5320009630FA /* ProductCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
+		EA9D40591F5D5477009630FA /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		EAE6C05C1F5CC59100BDFAB8 /* Happy Shop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Happy Shop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAE6C05F1F5CC59100BDFAB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAE6C0661F5CC59200BDFAB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -143,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				EA9D404F1F5D4AD9009630FA /* LabelCell.swift */,
+				EA9D40591F5D5477009630FA /* ProductCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -159,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				EA9D40551F5D4D84009630FA /* LabelCell.xib */,
+				EA9D40571F5D5320009630FA /* ProductCell.xib */,
 			);
 			path = Nibs;
 			sourceTree = "<group>";
@@ -302,6 +308,7 @@
 			files = (
 				EA9D402E1F5CD482009630FA /* Main.storyboard in Resources */,
 				EAE6C06A1F5CC59200BDFAB8 /* LaunchScreen.storyboard in Resources */,
+				EA9D40581F5D5320009630FA /* ProductCell.xib in Resources */,
 				EA9D40561F5D4D84009630FA /* LabelCell.xib in Resources */,
 				EAE6C0671F5CC59200BDFAB8 /* Assets.xcassets in Resources */,
 			);
@@ -415,6 +422,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAE6C0601F5CC59100BDFAB8 /* AppDelegate.swift in Sources */,
+				EA9D405A1F5D5477009630FA /* ProductCell.swift in Sources */,
 				EA9D40371F5D0231009630FA /* SephoraAPI.swift in Sources */,
 				EA9D40531F5D4B7A009630FA /* LabelSectionController.swift in Sources */,
 				EA9D40451F5D312A009630FA /* CategoryLoader.swift in Sources */,
