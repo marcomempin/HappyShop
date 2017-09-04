@@ -1,5 +1,5 @@
 //
-//  CategoryViewSectionController.swift
+//  CategorySectionController.swift
 //  Happy Shop
 //
 //  Created by Marco Mempin on 9/4/17.
@@ -9,7 +9,7 @@
 import UIKit
 import IGListKit
 
-class CategoryViewSectionController: ListSectionController {
+class CategorySectionController: ListSectionController {
     
     var category: Category!
     
