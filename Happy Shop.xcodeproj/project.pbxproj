@@ -10,6 +10,11 @@
 		668F8173A6B57B932C98BB06 /* Pods_Happy_ShopTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3B08818F362F0E18CD28EBD /* Pods_Happy_ShopTests.framework */; };
 		C22F5563A02C6BC830201D89 /* Pods_Happy_Shop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B2B1FEA2DF664373EF9FEFA /* Pods_Happy_Shop.framework */; };
 		EA9D402E1F5CD482009630FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA9D402C1F5CD482009630FA /* Main.storyboard */; };
+		EA9D40371F5D0231009630FA /* SephoraAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9D40361F5D0231009630FA /* SephoraAPI.swift */; };
+		EA9D403C1F5D2CE6009630FA /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9D403B1F5D2CE6009630FA /* Category.swift */; };
+		EA9D403E1F5D2D3A009630FA /* JSONAble.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9D403D1F5D2D3A009630FA /* JSONAble.swift */; };
+		EA9D40401F5D2EDB009630FA /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9D403F1F5D2EDB009630FA /* Product.swift */; };
+		EA9D40451F5D312A009630FA /* CategoryLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9D40441F5D312A009630FA /* CategoryLoader.swift */; };
 		EAE6C0601F5CC59100BDFAB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE6C05F1F5CC59100BDFAB8 /* AppDelegate.swift */; };
 		EAE6C0671F5CC59200BDFAB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAE6C0661F5CC59200BDFAB8 /* Assets.xcassets */; };
 		EAE6C06A1F5CC59200BDFAB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAE6C0681F5CC59200BDFAB8 /* LaunchScreen.storyboard */; };
@@ -34,6 +39,11 @@
 		D3B08818F362F0E18CD28EBD /* Pods_Happy_ShopTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Happy_ShopTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD323858C52C144B3F842B59 /* Pods-Happy Shop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Happy Shop.release.xcconfig"; path = "Pods/Target Support Files/Pods-Happy Shop/Pods-Happy Shop.release.xcconfig"; sourceTree = "<group>"; };
 		EA9D402D1F5CD482009630FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EA9D40361F5D0231009630FA /* SephoraAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SephoraAPI.swift; sourceTree = "<group>"; };
+		EA9D403B1F5D2CE6009630FA /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		EA9D403D1F5D2D3A009630FA /* JSONAble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONAble.swift; sourceTree = "<group>"; };
+		EA9D403F1F5D2EDB009630FA /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		EA9D40441F5D312A009630FA /* CategoryLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryLoader.swift; sourceTree = "<group>"; };
 		EAE6C05C1F5CC59100BDFAB8 /* Happy Shop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Happy Shop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAE6C05F1F5CC59100BDFAB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAE6C0661F5CC59200BDFAB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -84,6 +94,32 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		EA9D40351F5D0221009630FA /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				EA9D40361F5D0231009630FA /* SephoraAPI.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		EA9D403A1F5D2CD8009630FA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EA9D403D1F5D2D3A009630FA /* JSONAble.swift */,
+				EA9D403B1F5D2CE6009630FA /* Category.swift */,
+				EA9D403F1F5D2EDB009630FA /* Product.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EA9D40431F5D3112009630FA /* Systems */ = {
+			isa = PBXGroup;
+			children = (
+				EA9D40441F5D312A009630FA /* CategoryLoader.swift */,
+			);
+			path = Systems;
+			sourceTree = "<group>";
+		};
 		EAE6C0531F5CC59100BDFAB8 = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +148,9 @@
 				EAE6C0681F5CC59200BDFAB8 /* LaunchScreen.storyboard */,
 				EAE6C06B1F5CC59200BDFAB8 /* Info.plist */,
 				EA9D402C1F5CD482009630FA /* Main.storyboard */,
+				EA9D40351F5D0221009630FA /* Networking */,
+				EA9D403A1F5D2CD8009630FA /* Models */,
+				EA9D40431F5D3112009630FA /* Systems */,
 			);
 			path = "Happy Shop";
 			sourceTree = "<group>";
@@ -328,6 +367,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAE6C0601F5CC59100BDFAB8 /* AppDelegate.swift in Sources */,
+				EA9D40371F5D0231009630FA /* SephoraAPI.swift in Sources */,
+				EA9D40451F5D312A009630FA /* CategoryLoader.swift in Sources */,
+				EA9D40401F5D2EDB009630FA /* Product.swift in Sources */,
+				EA9D403C1F5D2CE6009630FA /* Category.swift in Sources */,
+				EA9D403E1F5D2D3A009630FA /* JSONAble.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
