@@ -12,6 +12,7 @@ import Moya
 class ProductLoader {
     
     var products: [Product] = []
+    var product: Product!
     let provider = MoyaProvider<SephoraAPI>()
     
     func getProducts(for category: String, page: Int = 1, completion: @escaping () -> Void) {
@@ -43,6 +44,31 @@ class ProductLoader {
                 
             }
             
+        }
+    }
+    
+    func getProduct(of id: String, completion: @escaping () -> Product) {
+        provider.request(.product(id: id)) { result in
+            switch result {
+            case let .success(response):
+                do {
+                    let productJSONDictionary = try response.mapJSON() as! [String : Any]
+                    
+                    let productJSON = productJSONDictionary["product"] as! [String : Any]
+                    
+                    self.product = Product.fromJSON(productJSON)
+                    
+                } catch {
+                    
+                }
+                
+            case let .failure(error):
+                guard let error = error as? CustomStringConvertible else {
+                    print("Cannot convert error to String")
+                    break
+                }
+                print(error.description)
+            }
         }
     }
     
