@@ -27,12 +27,9 @@ extension SephoraAPI: TargetType {
         case .categories:
             return "categories"
             
-        case .products(let category, let page):
-            return "products?category=\(category)&page=\(page)"
-            
-        case .product(let id):
-            return "products/\(id)"
-            
+        case .products,
+             .product:
+            return "products"
         }
     }
     
@@ -43,12 +40,21 @@ extension SephoraAPI: TargetType {
     
     /// The parameters to be encoded in the request.
     var parameters: [String: Any]? {
-        return nil
+        switch self {
+        case .categories:
+            return nil
+            
+        case .products(let category, let page):
+            return ["category" : category, "page" : page]
+            
+        case .product(let id):
+            return ["id" : id]
+        }
     }
     
     /// The method used for parameter encoding.
     var parameterEncoding: ParameterEncoding {
-        return JSONEncoding.default
+        return URLEncoding.default
     }
     
     /// Provides stub data for use in testing.
