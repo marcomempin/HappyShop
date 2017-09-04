@@ -13,12 +13,12 @@ final class Product: NSObject, JSONAbleType {
     let id: String
     let name: String
     let category: String
-    let price: String
+    let price: Double
     let imageURL: String
     let descriptions: String
     let isOnSale: Bool
 
-    init(id: String, name: String, category: String, price: String, imageURL: String, descriptions: String, onSale: Bool) {
+    init(id: String, name: String, category: String, price: Double, imageURL: String, descriptions: String, onSale: Bool) {
         self.id = id
         self.name = name
         self.category = category
@@ -34,7 +34,7 @@ final class Product: NSObject, JSONAbleType {
         let id = json["id"].stringValue
         let name = json["name"].stringValue
         let category = json["category"].stringValue
-        let price = json["price"].stringValue
+        let price = json["price"].doubleValue
         let imageURL = json["img_url"].stringValue
         let descriptions = json["description"].stringValue
         let isOnSale = json["under_sale"].boolValue
