@@ -46,3 +46,13 @@ final class Product: NSObject, JSONAbleType {
         return "\(self.name)"
     }
 }
+
+extension Product: ListDiffable {
+    func diffIdentifier() -> NSObjectProtocol {
+        return self.id as NSObjectProtocol
+    }
+    
+    func isEqual(toDiffableObject object: ListDiffable?) -> Bool {
+        return true
+    }
+}
