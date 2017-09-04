@@ -33,6 +33,7 @@ class CategorySectionController: ListSectionController {
         
         let products = self.category.products
         let product = products[index]
+        cell.imageView.imageFromServerURL(urlString: product.imageURL)
         cell.nameLabel.text = product.name
         cell.priceLabel.text = String(format: "S$%.02f", product.price)
         cell.onSaleLabel.isHidden = !product.isOnSale
@@ -45,6 +46,27 @@ class CategorySectionController: ListSectionController {
     }
     
     override func didSelectItem(at index: Int) {
-        
+        let product = self.category.products[index]
+        print("\(product.id) - \(product.name)")
     }
 }
+
+// http://stackoverflow.com/a/37019507/737370
+extension UIImageView {
+    public func imageFromServerURL(urlString: String) {
+        
+        URLSession.shared.dataTask(with: NSURL(string: urlString)! as URL, completionHandler: { (data, response, error) -> Void in
+            
+            if error != nil {
+                print(error!)
+                return
+            }
+            DispatchQueue.main.async(execute: { () -> Void in
+                let image = UIImage(data: data!)
+                self.image = image
+            })
+            
+        }).resume()
+    }
+}
+
