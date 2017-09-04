@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		668F8173A6B57B932C98BB06 /* Pods_Happy_ShopTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3B08818F362F0E18CD28EBD /* Pods_Happy_ShopTests.framework */; };
+		C22F5563A02C6BC830201D89 /* Pods_Happy_Shop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B2B1FEA2DF664373EF9FEFA /* Pods_Happy_Shop.framework */; };
+		EA9D402E1F5CD482009630FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA9D402C1F5CD482009630FA /* Main.storyboard */; };
 		EAE6C0601F5CC59100BDFAB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE6C05F1F5CC59100BDFAB8 /* AppDelegate.swift */; };
-		EAE6C0621F5CC59100BDFAB8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE6C0611F5CC59100BDFAB8 /* ViewController.swift */; };
-		EAE6C0651F5CC59100BDFAB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAE6C0631F5CC59100BDFAB8 /* Main.storyboard */; };
 		EAE6C0671F5CC59200BDFAB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAE6C0661F5CC59200BDFAB8 /* Assets.xcassets */; };
 		EAE6C06A1F5CC59200BDFAB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAE6C0681F5CC59200BDFAB8 /* LaunchScreen.storyboard */; };
 		EAE6C0751F5CC59200BDFAB8 /* Happy_ShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE6C0741F5CC59200BDFAB8 /* Happy_ShopTests.swift */; };
@@ -26,10 +27,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17AE65876F716C2A5D3AAC3A /* Pods-Happy Shop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Happy Shop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Happy Shop/Pods-Happy Shop.debug.xcconfig"; sourceTree = "<group>"; };
+		3D3BDBB468D53D3223C8EE8F /* Pods-Happy ShopTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Happy ShopTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Happy ShopTests/Pods-Happy ShopTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6B2B1FEA2DF664373EF9FEFA /* Pods_Happy_Shop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Happy_Shop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD0184CE028F32AA9EB658E4 /* Pods-Happy ShopTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Happy ShopTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Happy ShopTests/Pods-Happy ShopTests.release.xcconfig"; sourceTree = "<group>"; };
+		D3B08818F362F0E18CD28EBD /* Pods_Happy_ShopTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Happy_ShopTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD323858C52C144B3F842B59 /* Pods-Happy Shop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Happy Shop.release.xcconfig"; path = "Pods/Target Support Files/Pods-Happy Shop/Pods-Happy Shop.release.xcconfig"; sourceTree = "<group>"; };
+		EA9D402D1F5CD482009630FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EAE6C05C1F5CC59100BDFAB8 /* Happy Shop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Happy Shop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAE6C05F1F5CC59100BDFAB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EAE6C0611F5CC59100BDFAB8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EAE6C0641F5CC59100BDFAB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EAE6C0661F5CC59200BDFAB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAE6C0691F5CC59200BDFAB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAE6C06B1F5CC59200BDFAB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C22F5563A02C6BC830201D89 /* Pods_Happy_Shop.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +57,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				668F8173A6B57B932C98BB06 /* Pods_Happy_ShopTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		40E5711549ADFBD876C56249 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B2B1FEA2DF664373EF9FEFA /* Pods_Happy_Shop.framework */,
+				D3B08818F362F0E18CD28EBD /* Pods_Happy_ShopTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		794322450EC9EC9B860F1CE1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				17AE65876F716C2A5D3AAC3A /* Pods-Happy Shop.debug.xcconfig */,
+				DD323858C52C144B3F842B59 /* Pods-Happy Shop.release.xcconfig */,
+				3D3BDBB468D53D3223C8EE8F /* Pods-Happy ShopTests.debug.xcconfig */,
+				BD0184CE028F32AA9EB658E4 /* Pods-Happy ShopTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EAE6C0531F5CC59100BDFAB8 = {
 			isa = PBXGroup;
 			children = (
 				EAE6C05E1F5CC59100BDFAB8 /* Happy Shop */,
 				EAE6C0731F5CC59200BDFAB8 /* Happy ShopTests */,
 				EAE6C05D1F5CC59100BDFAB8 /* Products */,
+				794322450EC9EC9B860F1CE1 /* Pods */,
+				40E5711549ADFBD876C56249 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,11 +108,10 @@
 			isa = PBXGroup;
 			children = (
 				EAE6C05F1F5CC59100BDFAB8 /* AppDelegate.swift */,
-				EAE6C0611F5CC59100BDFAB8 /* ViewController.swift */,
-				EAE6C0631F5CC59100BDFAB8 /* Main.storyboard */,
 				EAE6C0661F5CC59200BDFAB8 /* Assets.xcassets */,
 				EAE6C0681F5CC59200BDFAB8 /* LaunchScreen.storyboard */,
 				EAE6C06B1F5CC59200BDFAB8 /* Info.plist */,
+				EA9D402C1F5CD482009630FA /* Main.storyboard */,
 			);
 			path = "Happy Shop";
 			sourceTree = "<group>";
@@ -103,9 +132,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EAE6C0791F5CC59200BDFAB8 /* Build configuration list for PBXNativeTarget "Happy Shop" */;
 			buildPhases = (
+				D98908A0E6343EC3A4618D98 /* [CP] Check Pods Manifest.lock */,
 				EAE6C0581F5CC59100BDFAB8 /* Sources */,
 				EAE6C0591F5CC59100BDFAB8 /* Frameworks */,
 				EAE6C05A1F5CC59100BDFAB8 /* Resources */,
+				571EA7B3C704A42F572B159A /* [CP] Embed Pods Frameworks */,
+				70D4334718E8777E80D12B0A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +152,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EAE6C07C1F5CC59200BDFAB8 /* Build configuration list for PBXNativeTarget "Happy ShopTests" */;
 			buildPhases = (
+				35D5B7A1E26AC00F51CC45C7 /* [CP] Check Pods Manifest.lock */,
 				EAE6C06C1F5CC59200BDFAB8 /* Sources */,
 				EAE6C06D1F5CC59200BDFAB8 /* Frameworks */,
 				EAE6C06E1F5CC59200BDFAB8 /* Resources */,
+				6C0042602A4FC704EBCE86A5 /* [CP] Embed Pods Frameworks */,
+				EEC63CE264FC515DCD55AF9B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -179,9 +214,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA9D402E1F5CD482009630FA /* Main.storyboard in Resources */,
 				EAE6C06A1F5CC59200BDFAB8 /* LaunchScreen.storyboard in Resources */,
 				EAE6C0671F5CC59200BDFAB8 /* Assets.xcassets in Resources */,
-				EAE6C0651F5CC59100BDFAB8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,12 +229,104 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		35D5B7A1E26AC00F51CC45C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		571EA7B3C704A42F572B159A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Happy Shop/Pods-Happy Shop-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C0042602A4FC704EBCE86A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Happy ShopTests/Pods-Happy ShopTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70D4334718E8777E80D12B0A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Happy Shop/Pods-Happy Shop-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D98908A0E6343EC3A4618D98 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EEC63CE264FC515DCD55AF9B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Happy ShopTests/Pods-Happy ShopTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EAE6C0581F5CC59100BDFAB8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAE6C0621F5CC59100BDFAB8 /* ViewController.swift in Sources */,
 				EAE6C0601F5CC59100BDFAB8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,10 +350,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EAE6C0631F5CC59100BDFAB8 /* Main.storyboard */ = {
+		EA9D402C1F5CD482009630FA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EAE6C0641F5CC59100BDFAB8 /* Base */,
+				EA9D402D1F5CD482009630FA /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -337,6 +464,7 @@
 		};
 		EAE6C07A1F5CC59200BDFAB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17AE65876F716C2A5D3AAC3A /* Pods-Happy Shop.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Happy Shop/Info.plist";
@@ -349,6 +477,7 @@
 		};
 		EAE6C07B1F5CC59200BDFAB8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD323858C52C144B3F842B59 /* Pods-Happy Shop.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Happy Shop/Info.plist";
@@ -361,6 +490,7 @@
 		};
 		EAE6C07D1F5CC59200BDFAB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D3BDBB468D53D3223C8EE8F /* Pods-Happy ShopTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -375,6 +505,7 @@
 		};
 		EAE6C07E1F5CC59200BDFAB8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD0184CE028F32AA9EB658E4 /* Pods-Happy ShopTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -406,6 +537,7 @@
 				EAE6C07B1F5CC59200BDFAB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EAE6C07C1F5CC59200BDFAB8 /* Build configuration list for PBXNativeTarget "Happy ShopTests" */ = {
 			isa = XCConfigurationList;
@@ -414,6 +546,7 @@
 				EAE6C07E1F5CC59200BDFAB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
