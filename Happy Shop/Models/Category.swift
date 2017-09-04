@@ -13,10 +13,12 @@ import SwiftyJSON
 final class Category: NSObject, JSONAbleType {
     let name: String
     let productCount: Int
+    var products: [Product]
     
-    init(name: String, productCount: Int) {
+    init(name: String, productCount: Int, products: [Product] = []) {
         self.name = name
         self.productCount = productCount
+        self.products = products
     }
     
     static func fromJSON(_ source: [String : Any]) -> Category {
@@ -41,7 +43,9 @@ extension Category: ListDiffable {
     }
     
     func isEqual(toDiffableObject object: ListDiffable?) -> Bool {
-        return true
+        guard let object = object as? Category else { return false }
+        if self === object { return true }
+        return self.products == object.products
     }
     
 }
