@@ -22,13 +22,8 @@ final class Category: NSObject, JSONAbleType {
     static func fromJSON(_ source: [String : Any]) -> Category {
         let json = JSON(source)
         
-        var name = json["name"].stringValue
+        let name = json["name"].stringValue
         let productCount = json["products_count"].intValue
-        
-        // Convert "Bath & Body" to "Bath%20%26%20Body"
-        if name.contains("Bath") {
-            name = "Bath%20%26%20Body"
-        }
         
         return Category(name: name, productCount: productCount)
     }
@@ -37,4 +32,16 @@ final class Category: NSObject, JSONAbleType {
         return "Name: \(self.name) - Product Count: \(self.productCount)"
     }
 
+}
+
+extension Category: ListDiffable {
+    
+    func diffIdentifier() -> NSObjectProtocol {
+        return self.name as NSObjectProtocol
+    }
+    
+    func isEqual(toDiffableObject object: ListDiffable?) -> Bool {
+        return true
+    }
+    
 }
