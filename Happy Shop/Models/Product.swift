@@ -41,4 +41,8 @@ final class Product: NSObject, JSONAbleType {
         
         return Product(id: id, name: name, category: category, price: price, imageURL: imageURL, descriptions: descriptions, onSale: isOnSale)
     }
+    
+    override var description: String {
+        return "\(self.name)"
+    }
 }
