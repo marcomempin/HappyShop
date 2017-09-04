@@ -36,8 +36,6 @@ class CategorySectionController: ListSectionController {
         cell.nameLabel.text = product.name
         cell.priceLabel.text = String(format: "S$%.02f", product.price)
         cell.onSaleLabel.isHidden = !product.isOnSale
-        cell.layer.borderColor = UIColor.blue.cgColor
-        cell.layer.borderWidth = 1
         
         return cell
     }
