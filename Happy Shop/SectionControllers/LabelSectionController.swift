@@ -11,7 +11,7 @@ import IGListKit
 
 class LabelSectionController: ListSectionController {
     
-    var object: Category!
+    var category: Category!
     
     override func numberOfItems() -> Int {
         return 1
@@ -23,16 +23,18 @@ class LabelSectionController: ListSectionController {
     
     override func cellForItem(at index: Int) -> UICollectionViewCell {
         let cell = collectionContext!.dequeueReusableCell(withNibName: "LabelCell", bundle: nil, for: self, at: index) as! LabelCell
-        cell.textLabel.text = object.name
-        cell.countLabel.text = String(object.productCount)
+        cell.textLabel.text = category.name
+        cell.countLabel.text = String(category.productCount)
         return cell
     }
     
     override func didUpdate(to object: Any) {
-        self.object = object as! Category
+        self.category = object as! Category
     }
     
     override func didSelectItem(at index: Int) {
-        print("\(self.object.name)")
+        let categoryViewController = CategoryViewController()
+        categoryViewController.category = self.category
+        self.viewController?.navigationController?.pushViewController(categoryViewController, animated: true)
     }
 }
