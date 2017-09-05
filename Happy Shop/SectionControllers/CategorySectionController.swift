@@ -22,10 +22,11 @@ class CategorySectionController: ListSectionController {
     }
     
     override func sizeForItem(at index: Int) -> CGSize {
-        let width = collectionContext!.containerSize.width
-        let itemSize = floor(width / 2)
+        
+        let width = floor(collectionContext!.containerSize.width / 2)
         let heightRatio: CGFloat = 1.7
-        return CGSize(width: itemSize, height: itemSize * heightRatio)
+        
+        return CGSize(width: width, height: width * heightRatio)
     }
     
     override func cellForItem(at index: Int) -> UICollectionViewCell {
@@ -36,7 +37,7 @@ class CategorySectionController: ListSectionController {
         cell.imageView.imageFromServerURL(urlString: product.imageURL) {
             if cell.imageView.image == nil {
                 // https://placeholder.com/
-                cell.imageView.imageFromServerURL(urlString: "http://via.placeholder.com/1000x1000/\(self.randomHexColorCode())/\(self.randomHexColorCode())") {
+                cell.imageView.imageFromServerURL(urlString: "http://via.placeholder.com/1000x1000/\(String.randomHexColorCode())/\(String.randomHexColorCode())") {
                     cell.loadingIndicator.stopAnimating()
                 }
             } else {
@@ -62,37 +63,5 @@ class CategorySectionController: ListSectionController {
         productViewController.product = product
         self.viewController?.navigationController?.pushViewController(productViewController, animated: true)
     }
-    
-    // http://www.amarendrasingh.in/swift/swift-3-uicolor-utilities-random-hex-color-codes-random-uicolor/
-    func randomHexColorCode() -> String {
-        let a = ["1","2","3","4","5","6","7","8","9","a","b","c","d","e","f"];
-        return a[Int(arc4random_uniform(15))]
-            .appending(a[Int(arc4random_uniform(15))])
-            .appending(a[Int(arc4random_uniform(15))])
-            .appending(a[Int(arc4random_uniform(15))])
-            .appending(a[Int(arc4random_uniform(15))])
-            .appending(a[Int(arc4random_uniform(15))])
-    }
-}
 
-// MARK: UIImageView Extension
-// http://stackoverflow.com/a/37019507/737370
-extension UIImageView {
-    public func imageFromServerURL(urlString: String, completion: @escaping () -> Void) {
-
-        URLSession.shared.dataTask(with: NSURL(string: urlString)! as URL, completionHandler: { (data, response, error) -> Void in
-            
-            if error != nil {
-                print(error!)
-                completion()
-                return
-            }
-            DispatchQueue.main.async(execute: { () -> Void in
-                let image = UIImage(data: data!)
-                self.image = image
-                completion()
-            })
-            
-        }).resume()
-    }
 }
