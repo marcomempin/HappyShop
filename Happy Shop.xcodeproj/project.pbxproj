@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		668F8173A6B57B932C98BB06 /* Pods_Happy_ShopTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3B08818F362F0E18CD28EBD /* Pods_Happy_ShopTests.framework */; };
 		C22F5563A02C6BC830201D89 /* Pods_Happy_Shop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B2B1FEA2DF664373EF9FEFA /* Pods_Happy_Shop.framework */; };
+		EA17101D1F5E4AB3002859C1 /* ProductSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA17101C1F5E4AB3002859C1 /* ProductSectionController.swift */; };
+		EA1710201F5E4BFA002859C1 /* UIImageView+ImageFromServerURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA17101F1F5E4BFA002859C1 /* UIImageView+ImageFromServerURL.swift */; };
+		EA1710241F5E5899002859C1 /* String+RandomHexColorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1710231F5E5899002859C1 /* String+RandomHexColorCode.swift */; };
+		EA1710261F5E5BC6002859C1 /* ButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA1710251F5E5BC6002859C1 /* ButtonCell.xib */; };
+		EA1710281F5E5CBA002859C1 /* ButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1710271F5E5CBA002859C1 /* ButtonCell.swift */; };
 		EA4E148D1F5E33BB00809DB7 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4E148C1F5E33BB00809DB7 /* ProductViewController.swift */; };
 		EA9D402E1F5CD482009630FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA9D402C1F5CD482009630FA /* Main.storyboard */; };
 		EA9D40371F5D0231009630FA /* SephoraAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9D40361F5D0231009630FA /* SephoraAPI.swift */; };
@@ -48,6 +53,11 @@
 		BD0184CE028F32AA9EB658E4 /* Pods-Happy ShopTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Happy ShopTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Happy ShopTests/Pods-Happy ShopTests.release.xcconfig"; sourceTree = "<group>"; };
 		D3B08818F362F0E18CD28EBD /* Pods_Happy_ShopTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Happy_ShopTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD323858C52C144B3F842B59 /* Pods-Happy Shop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Happy Shop.release.xcconfig"; path = "Pods/Target Support Files/Pods-Happy Shop/Pods-Happy Shop.release.xcconfig"; sourceTree = "<group>"; };
+		EA17101C1F5E4AB3002859C1 /* ProductSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductSectionController.swift; sourceTree = "<group>"; };
+		EA17101F1F5E4BFA002859C1 /* UIImageView+ImageFromServerURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+ImageFromServerURL.swift"; sourceTree = "<group>"; };
+		EA1710231F5E5899002859C1 /* String+RandomHexColorCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+RandomHexColorCode.swift"; sourceTree = "<group>"; };
+		EA1710251F5E5BC6002859C1 /* ButtonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonCell.xib; sourceTree = "<group>"; };
+		EA1710271F5E5CBA002859C1 /* ButtonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonCell.swift; sourceTree = "<group>"; };
 		EA4E148C1F5E33BB00809DB7 /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		EA9D402D1F5CD482009630FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA9D40361F5D0231009630FA /* SephoraAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SephoraAPI.swift; sourceTree = "<group>"; };
@@ -114,6 +124,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		EA17101E1F5E4B6E002859C1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EA17101F1F5E4BFA002859C1 /* UIImageView+ImageFromServerURL.swift */,
+				EA1710231F5E5899002859C1 /* String+RandomHexColorCode.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		EA9D40351F5D0221009630FA /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +175,7 @@
 			children = (
 				EA9D404F1F5D4AD9009630FA /* LabelCell.swift */,
 				EA9D40591F5D5477009630FA /* ProductCell.swift */,
+				EA1710271F5E5CBA002859C1 /* ButtonCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -165,6 +185,7 @@
 			children = (
 				EA9D40521F5D4B7A009630FA /* LabelSectionController.swift */,
 				EA9D405D1F5D56FD009630FA /* CategorySectionController.swift */,
+				EA17101C1F5E4AB3002859C1 /* ProductSectionController.swift */,
 			);
 			path = SectionControllers;
 			sourceTree = "<group>";
@@ -174,6 +195,7 @@
 			children = (
 				EA9D40551F5D4D84009630FA /* LabelCell.xib */,
 				EA9D40571F5D5320009630FA /* ProductCell.xib */,
+				EA1710251F5E5BC6002859C1 /* ButtonCell.xib */,
 			);
 			path = Nibs;
 			sourceTree = "<group>";
@@ -213,6 +235,7 @@
 				EA9D404A1F5D45B1009630FA /* ViewControllers */,
 				EA9D404E1F5D4AB1009630FA /* Views */,
 				EA9D40541F5D4D6D009630FA /* Nibs */,
+				EA17101E1F5E4B6E002859C1 /* Extensions */,
 			);
 			path = "Happy Shop";
 			sourceTree = "<group>";
@@ -318,6 +341,7 @@
 				EA9D402E1F5CD482009630FA /* Main.storyboard in Resources */,
 				EAE6C06A1F5CC59200BDFAB8 /* LaunchScreen.storyboard in Resources */,
 				EA9D40581F5D5320009630FA /* ProductCell.xib in Resources */,
+				EA1710261F5E5BC6002859C1 /* ButtonCell.xib in Resources */,
 				EA9D40561F5D4D84009630FA /* LabelCell.xib in Resources */,
 				EAE6C0671F5CC59200BDFAB8 /* Assets.xcassets in Resources */,
 			);
@@ -434,14 +458,18 @@
 				EA9D405A1F5D5477009630FA /* ProductCell.swift in Sources */,
 				EA9D405E1F5D56FD009630FA /* CategorySectionController.swift in Sources */,
 				EA9D40371F5D0231009630FA /* SephoraAPI.swift in Sources */,
+				EA1710241F5E5899002859C1 /* String+RandomHexColorCode.swift in Sources */,
 				EA9D40531F5D4B7A009630FA /* LabelSectionController.swift in Sources */,
 				EA9D405C1F5D5521009630FA /* CategoryViewController.swift in Sources */,
 				EA9D40451F5D312A009630FA /* CategoryLoader.swift in Sources */,
+				EA1710201F5E4BFA002859C1 /* UIImageView+ImageFromServerURL.swift in Sources */,
 				EA9D404C1F5D45BF009630FA /* HomeViewController.swift in Sources */,
 				EA9D40471F5D3E8A009630FA /* ProductLoader.swift in Sources */,
+				EA1710281F5E5CBA002859C1 /* ButtonCell.swift in Sources */,
 				EA9D40401F5D2EDB009630FA /* Product.swift in Sources */,
 				EA4E148D1F5E33BB00809DB7 /* ProductViewController.swift in Sources */,
 				EA9D403C1F5D2CE6009630FA /* Category.swift in Sources */,
+				EA17101D1F5E4AB3002859C1 /* ProductSectionController.swift in Sources */,
 				EA9D40501F5D4AD9009630FA /* LabelCell.swift in Sources */,
 				EA9D403E1F5D2D3A009630FA /* JSONAble.swift in Sources */,
 			);
