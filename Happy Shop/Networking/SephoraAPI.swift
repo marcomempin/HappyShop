@@ -27,9 +27,11 @@ extension SephoraAPI: TargetType {
         case .categories:
             return "categories"
             
-        case .products,
-             .product:
+        case .products:
             return "products"
+            
+        case .product(let id):
+            return "products/\(id)"
         }
     }
     
@@ -41,14 +43,12 @@ extension SephoraAPI: TargetType {
     /// The parameters to be encoded in the request.
     var parameters: [String: Any]? {
         switch self {
-        case .categories:
+        case .categories,
+             .product:
             return nil
             
         case .products(let category, let page):
             return ["category" : category, "page" : page]
-            
-        case .product(let id):
-            return ["id" : id]
         }
     }
     
