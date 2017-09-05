@@ -53,6 +53,8 @@ extension Product: ListDiffable {
     }
     
     func isEqual(toDiffableObject object: ListDiffable?) -> Bool {
-        return true
+        guard let object = object as? Product else { return false }
+        if self === object { return true }
+        return self.price == object.price
     }
 }
