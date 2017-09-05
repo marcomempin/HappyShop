@@ -14,7 +14,7 @@
 		EA1710241F5E5899002859C1 /* String+RandomHexColorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1710231F5E5899002859C1 /* String+RandomHexColorCode.swift */; };
 		EA1710261F5E5BC6002859C1 /* ButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA1710251F5E5BC6002859C1 /* ButtonCell.xib */; };
 		EA1710281F5E5CBA002859C1 /* ButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1710271F5E5CBA002859C1 /* ButtonCell.swift */; };
-		EA17102C1F5E7D15002859C1 /* DescrptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA17102B1F5E7D15002859C1 /* DescrptionCell.swift */; };
+		EA17102C1F5E7D15002859C1 /* DescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA17102B1F5E7D15002859C1 /* DescriptionCell.swift */; };
 		EA17102E1F5E7D20002859C1 /* DescriptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA17102D1F5E7D20002859C1 /* DescriptionCell.xib */; };
 		EA4E148D1F5E33BB00809DB7 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4E148C1F5E33BB00809DB7 /* ProductViewController.swift */; };
 		EA9D402E1F5CD482009630FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA9D402C1F5CD482009630FA /* Main.storyboard */; };
@@ -60,7 +60,7 @@
 		EA1710231F5E5899002859C1 /* String+RandomHexColorCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+RandomHexColorCode.swift"; sourceTree = "<group>"; };
 		EA1710251F5E5BC6002859C1 /* ButtonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonCell.xib; sourceTree = "<group>"; };
 		EA1710271F5E5CBA002859C1 /* ButtonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonCell.swift; sourceTree = "<group>"; };
-		EA17102B1F5E7D15002859C1 /* DescrptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescrptionCell.swift; sourceTree = "<group>"; };
+		EA17102B1F5E7D15002859C1 /* DescriptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionCell.swift; sourceTree = "<group>"; };
 		EA17102D1F5E7D20002859C1 /* DescriptionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DescriptionCell.xib; sourceTree = "<group>"; };
 		EA4E148C1F5E33BB00809DB7 /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		EA9D402D1F5CD482009630FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -180,7 +180,7 @@
 				EA9D404F1F5D4AD9009630FA /* LabelCell.swift */,
 				EA9D40591F5D5477009630FA /* ProductCell.swift */,
 				EA1710271F5E5CBA002859C1 /* ButtonCell.swift */,
-				EA17102B1F5E7D15002859C1 /* DescrptionCell.swift */,
+				EA17102B1F5E7D15002859C1 /* DescriptionCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -462,7 +462,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAE6C0601F5CC59100BDFAB8 /* AppDelegate.swift in Sources */,
-				EA17102C1F5E7D15002859C1 /* DescrptionCell.swift in Sources */,
+				EA17102C1F5E7D15002859C1 /* DescriptionCell.swift in Sources */,
 				EA9D405A1F5D5477009630FA /* ProductCell.swift in Sources */,
 				EA9D405E1F5D56FD009630FA /* CategorySectionController.swift in Sources */,
 				EA9D40371F5D0231009630FA /* SephoraAPI.swift in Sources */,

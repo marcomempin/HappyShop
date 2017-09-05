@@ -1,5 +1,5 @@
 //
-//  DescrptionCell.swift
+//  DescriptionCell.swift
 //  Happy Shop
 //
 //  Created by Marco Mempin on 9/5/17.
@@ -8,6 +8,7 @@
 
 import UIKit
 
-class DescrptionCell: UICollectionViewCell {
+class DescriptionCell: UICollectionViewCell {
+    @IBOutlet weak var textLabel: UILabel!
     
 }
