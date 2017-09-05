@@ -23,7 +23,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Huy-MU-zTa">
-                        <barButtonItem key="rightBarButtonItem" id="DGk-Js-qMr">
+                        <barButtonItem key="rightBarButtonItem" title=" " id="DGk-Js-qMr">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
                     </navigationItem>
