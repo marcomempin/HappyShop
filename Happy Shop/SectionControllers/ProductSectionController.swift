@@ -81,7 +81,20 @@ class ProductSectionController: ListSectionController {
     }
     
     func addToCart() {
-        print("Product \(self.product.name) was added to the cart.")
+        let alertController = UIAlertController(title: "Product Added", message: "\(product.name) has been added to your cart", preferredStyle: .alert)
+        
+        let okAction = UIAlertAction(title: "Ok", style: .default)
+        alertController.addAction(okAction)
+        
+        self.viewController?.present(alertController, animated: true, completion: { 
+            let userDefaults = UserDefaults.standard
+            
+            var productArray = userDefaults.array(forKey: "cart")!
+            productArray.append(self.product.json.rawString()!)
+            
+            userDefaults.set(productArray, forKey: "cart")
+            userDefaults.synchronize()
+        })
     }
 
 }
