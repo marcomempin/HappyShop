@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		668F8173A6B57B932C98BB06 /* Pods_Happy_ShopTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3B08818F362F0E18CD28EBD /* Pods_Happy_ShopTests.framework */; };
 		C22F5563A02C6BC830201D89 /* Pods_Happy_Shop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B2B1FEA2DF664373EF9FEFA /* Pods_Happy_Shop.framework */; };
+		EA4E148D1F5E33BB00809DB7 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4E148C1F5E33BB00809DB7 /* ProductViewController.swift */; };
 		EA9D402E1F5CD482009630FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA9D402C1F5CD482009630FA /* Main.storyboard */; };
 		EA9D40371F5D0231009630FA /* SephoraAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9D40361F5D0231009630FA /* SephoraAPI.swift */; };
 		EA9D403C1F5D2CE6009630FA /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9D403B1F5D2CE6009630FA /* Category.swift */; };
@@ -47,6 +48,7 @@
 		BD0184CE028F32AA9EB658E4 /* Pods-Happy ShopTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Happy ShopTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Happy ShopTests/Pods-Happy ShopTests.release.xcconfig"; sourceTree = "<group>"; };
 		D3B08818F362F0E18CD28EBD /* Pods_Happy_ShopTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Happy_ShopTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD323858C52C144B3F842B59 /* Pods-Happy Shop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Happy Shop.release.xcconfig"; path = "Pods/Target Support Files/Pods-Happy Shop/Pods-Happy Shop.release.xcconfig"; sourceTree = "<group>"; };
+		EA4E148C1F5E33BB00809DB7 /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		EA9D402D1F5CD482009630FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA9D40361F5D0231009630FA /* SephoraAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SephoraAPI.swift; sourceTree = "<group>"; };
 		EA9D403B1F5D2CE6009630FA /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 			children = (
 				EA9D404B1F5D45BF009630FA /* HomeViewController.swift */,
 				EA9D405B1F5D5521009630FA /* CategoryViewController.swift */,
+				EA4E148C1F5E33BB00809DB7 /* ProductViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -437,6 +440,7 @@
 				EA9D404C1F5D45BF009630FA /* HomeViewController.swift in Sources */,
 				EA9D40471F5D3E8A009630FA /* ProductLoader.swift in Sources */,
 				EA9D40401F5D2EDB009630FA /* Product.swift in Sources */,
+				EA4E148D1F5E33BB00809DB7 /* ProductViewController.swift in Sources */,
 				EA9D403C1F5D2CE6009630FA /* Category.swift in Sources */,
 				EA9D40501F5D4AD9009630FA /* LabelCell.swift in Sources */,
 				EA9D403E1F5D2D3A009630FA /* JSONAble.swift in Sources */,
