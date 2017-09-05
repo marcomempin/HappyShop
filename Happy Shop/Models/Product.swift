@@ -17,8 +17,9 @@ final class Product: NSObject, JSONAbleType {
     let imageURL: String
     let descriptions: String
     let isOnSale: Bool
+    var json: JSON = JSON.null
 
-    init(id: String, name: String, category: String, price: Double, imageURL: String, descriptions: String, onSale: Bool) {
+    init(id: String, name: String, category: String, price: Double, imageURL: String, descriptions: String, onSale: Bool, jsonObject: JSON) {
         self.id = id
         self.name = name
         self.category = category
@@ -39,7 +40,7 @@ final class Product: NSObject, JSONAbleType {
         let descriptions = json["description"].stringValue
         let isOnSale = json["under_sale"].boolValue
         
-        return Product(id: id, name: name, category: category, price: price, imageURL: imageURL, descriptions: descriptions, onSale: isOnSale)
+        return Product(id: id, name: name, category: category, price: price, imageURL: imageURL, descriptions: descriptions, onSale: isOnSale, jsonObject: json)
     }
     
     override var description: String {
