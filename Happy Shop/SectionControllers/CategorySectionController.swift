@@ -50,6 +50,10 @@ class CategorySectionController: ListSectionController {
     override func didSelectItem(at index: Int) {
         let product = self.category.products[index]
         print("\(product.id) - \(product.name)")
+        
+        let productViewController = ProductViewController()
+        productViewController.product = product
+        self.viewController?.navigationController?.pushViewController(productViewController, animated: true)
     }
 }
 
