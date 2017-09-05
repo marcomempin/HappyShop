@@ -6,61 +6,64 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ZEg-bz-CGw" customClass="ProductCell" customModule="Happy_Shop" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="200" height="280"/>
+            <rect key="frame" x="0.0" y="0.0" width="200" height="263"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="200" height="280"/>
+                <rect key="frame" x="0.0" y="0.0" width="200" height="263"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NCn-sn-ZZy">
-                        <rect key="frame" x="0.0" y="0.0" width="200" height="196"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NCn-sn-ZZy">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="NCn-sn-ZZy" secondAttribute="height" multiplier="1:1" id="gb1-oW-Ecx"/>
+                        </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8S-2u-Js6">
-                        <rect key="frame" x="8" y="204" width="184" height="19.5"/>
+                        <rect key="frame" x="8" y="208" width="184" height="20"/>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8py-vV-f74">
-                        <rect key="frame" x="8" y="256" width="33" height="16"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ON SALE" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYU-8C-8pn">
-                        <rect key="frame" x="119" y="251" width="73" height="21"/>
+                        <rect key="frame" x="119" y="236" width="73" height="21"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                         <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="co8-g3-lEO">
-                        <rect key="frame" x="90" y="88" width="20" height="20"/>
+                        <rect key="frame" x="90" y="90" width="20" height="20"/>
                     </activityIndicatorView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8py-vV-f74">
+                        <rect key="frame" x="8" y="236" width="33" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
             </view>
             <constraints>
                 <constraint firstItem="co8-g3-lEO" firstAttribute="centerY" secondItem="NCn-sn-ZZy" secondAttribute="centerY" id="2JW-Fx-mtD"/>
                 <constraint firstItem="co8-g3-lEO" firstAttribute="centerX" secondItem="NCn-sn-ZZy" secondAttribute="centerX" id="AiJ-dV-xTg"/>
-                <constraint firstAttribute="bottom" secondItem="8py-vV-f74" secondAttribute="bottom" constant="8" id="Iof-6A-xnz"/>
-                <constraint firstItem="NCn-sn-ZZy" firstAttribute="width" secondItem="ZEg-bz-CGw" secondAttribute="width" id="aUw-cD-fzS"/>
+                <constraint firstItem="8py-vV-f74" firstAttribute="bottom" secondItem="JYU-8C-8pn" secondAttribute="bottom" id="Us0-BA-oFo"/>
                 <constraint firstItem="8py-vV-f74" firstAttribute="leading" secondItem="ZEg-bz-CGw" secondAttribute="leading" constant="8" id="hG7-Mr-Bbi"/>
                 <constraint firstItem="e8S-2u-Js6" firstAttribute="top" secondItem="NCn-sn-ZZy" secondAttribute="bottom" constant="8" id="hJi-aq-ZhZ"/>
+                <constraint firstItem="8py-vV-f74" firstAttribute="top" secondItem="e8S-2u-Js6" secondAttribute="bottom" constant="8" id="hjp-4v-GHs"/>
                 <constraint firstItem="NCn-sn-ZZy" firstAttribute="leading" secondItem="ZEg-bz-CGw" secondAttribute="leading" id="kCD-j9-vMO"/>
                 <constraint firstAttribute="trailing" secondItem="NCn-sn-ZZy" secondAttribute="trailing" id="kTq-qo-EJ5"/>
                 <constraint firstItem="NCn-sn-ZZy" firstAttribute="top" secondItem="ZEg-bz-CGw" secondAttribute="top" id="kYr-AP-rcN"/>
                 <constraint firstAttribute="trailing" secondItem="JYU-8C-8pn" secondAttribute="trailing" constant="8" id="mzo-8P-5oA"/>
                 <constraint firstItem="e8S-2u-Js6" firstAttribute="leading" secondItem="ZEg-bz-CGw" secondAttribute="leading" constant="8" id="ovT-xA-Uf5"/>
-                <constraint firstItem="NCn-sn-ZZy" firstAttribute="height" secondItem="ZEg-bz-CGw" secondAttribute="height" multiplier="0.7" id="rTp-7v-3QU"/>
+                <constraint firstItem="JYU-8C-8pn" firstAttribute="top" secondItem="e8S-2u-Js6" secondAttribute="bottom" constant="8" id="uUE-U2-gSt"/>
                 <constraint firstAttribute="trailing" secondItem="e8S-2u-Js6" secondAttribute="trailing" constant="8" id="vXL-RA-bg4"/>
-                <constraint firstAttribute="bottom" secondItem="JYU-8C-8pn" secondAttribute="bottom" constant="8" id="zZY-UL-2Yu"/>
             </constraints>
+            <size key="customSize" width="200" height="263"/>
             <connections>
                 <outlet property="imageView" destination="NCn-sn-ZZy" id="4p0-Cz-evo"/>
                 <outlet property="loadingIndicator" destination="co8-g3-lEO" id="dWS-4g-BUu"/>
@@ -68,7 +71,7 @@
                 <outlet property="onSaleLabel" destination="JYU-8C-8pn" id="ztA-3d-Zql"/>
                 <outlet property="priceLabel" destination="8py-vV-f74" id="mk4-aU-hMS"/>
             </connections>
-            <point key="canvasLocation" x="-111" y="-11"/>
+            <point key="canvasLocation" x="-146" y="-20"/>
         </collectionViewCell>
     </objects>
 </document>
