@@ -32,6 +32,9 @@ class ProductViewController: UIViewController {
         self.title = product.name
 
         self.productLoader.getProduct(of: product.id) {
+            if self.product.isEqual(toDiffableObject: self.productLoader.product) {
+                return
+            }
             self.product = self.productLoader.product
             self.adapter.reloadData()
         }
@@ -54,7 +57,7 @@ extension ProductViewController: ListAdapterDataSource {
     }
     
     func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any) -> ListSectionController {
-        return ListSectionController()
+        return ProductSectionController()
     }
     
     func emptyView(for listAdapter: ListAdapter) -> UIView? {
