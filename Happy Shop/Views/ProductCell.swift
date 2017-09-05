@@ -13,4 +13,5 @@ class ProductCell: UICollectionViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var onSaleLabel: UILabel!
+    @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
 }
