@@ -7,29 +7,57 @@
 //
 
 import UIKit
+import IGListKit
 
 class ProductViewController: UIViewController {
+    
+    // MARK: Data
+    let productLoader = ProductLoader()
+    var product: Product!
+    
+    // MARK: IGListKit
+    lazy var adapter: ListAdapter = {
+        return ListAdapter(updater: ListAdapterUpdater(), viewController: self, workingRangeSize: 0)
+    }()
+    
+    // MARK: UI
+    let collectionView: UICollectionView = {
+        let view = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
+        view.backgroundColor = .white
+        return view
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = product.name
 
-        // Do any additional setup after loading the view.
+        self.productLoader.getProduct(of: product.id) {
+            self.product = self.productLoader.product
+            self.adapter.reloadData()
+        }
+        
+        view.addSubview(collectionView)
+        adapter.collectionView = collectionView
+        adapter.dataSource = self
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        self.collectionView.frame = view.bounds
+    }
+}
+
+extension ProductViewController: ListAdapterDataSource {
+    func objects(for listAdapter: ListAdapter) -> [ListDiffable] {
+        let objects = [self.product] as [ListDiffable]
+        return objects
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any) -> ListSectionController {
+        return ListSectionController()
     }
-    */
-
+    
+    func emptyView(for listAdapter: ListAdapter) -> UIView? {
+        return nil
+    }
 }
