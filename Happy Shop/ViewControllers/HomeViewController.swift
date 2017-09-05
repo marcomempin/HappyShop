@@ -42,6 +42,18 @@ class HomeViewController: UIViewController {
         adapter.dataSource = self
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let userDefaults = UserDefaults.standard
+        let productArray = userDefaults.array(forKey: "cart")!
+        
+        if productArray.count > 1 {
+            let cartBarButton = self.navigationItem.rightBarButtonItem
+            cartBarButton?.title = "Cart: \(productArray.count)"
+        }
+    }
+    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         collectionView.frame = view.bounds

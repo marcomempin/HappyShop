@@ -42,6 +42,20 @@ class CategoryViewController: UIViewController {
         adapter.dataSource = self
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let userDefaults = UserDefaults.standard
+        let productArray = userDefaults.array(forKey: "cart")!
+        
+        if productArray.count > 1 {
+            let cartBarButton = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
+            cartBarButton.tintColor = .black
+            self.navigationItem.setRightBarButtonItems([cartBarButton], animated: false)
+            cartBarButton.title = "Cart: \(productArray.count)"
+        }
+    }
+    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         collectionView.frame = view.bounds
