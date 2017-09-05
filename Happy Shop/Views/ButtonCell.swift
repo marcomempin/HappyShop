@@ -9,5 +9,6 @@
 import UIKit
 
 class ButtonCell: UICollectionViewCell {
+    @IBOutlet weak var addToCartButton: UIButton!
     
 }
