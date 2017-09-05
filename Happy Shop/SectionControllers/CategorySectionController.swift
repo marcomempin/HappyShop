@@ -34,7 +34,13 @@ class CategorySectionController: ListSectionController {
         let products = self.category.products
         let product = products[index]
         cell.imageView.imageFromServerURL(urlString: product.imageURL) {
-            cell.loadingIndicator.stopAnimating()
+            if cell.imageView.image == nil {
+                cell.imageView.imageFromServerURL(urlString: "http://via.placeholder.com/1000x1000") {
+                    cell.loadingIndicator.stopAnimating()
+                }
+            } else {
+                cell.loadingIndicator.stopAnimating()
+            }
         }
         cell.nameLabel.text = product.name
         cell.priceLabel.text = String(format: "S$%.02f", product.price)
