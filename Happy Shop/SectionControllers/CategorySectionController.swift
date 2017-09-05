@@ -35,7 +35,8 @@ class CategorySectionController: ListSectionController {
         let product = products[index]
         cell.imageView.imageFromServerURL(urlString: product.imageURL) {
             if cell.imageView.image == nil {
-                cell.imageView.imageFromServerURL(urlString: "http://via.placeholder.com/1000x1000") {
+                // https://placeholder.com/
+                cell.imageView.imageFromServerURL(urlString: "http://via.placeholder.com/1000x1000/\(self.randomHexColorCode())/\(self.randomHexColorCode())") {
                     cell.loadingIndicator.stopAnimating()
                 }
             } else {
@@ -61,13 +62,24 @@ class CategorySectionController: ListSectionController {
         productViewController.product = product
         self.viewController?.navigationController?.pushViewController(productViewController, animated: true)
     }
+    
+    // http://www.amarendrasingh.in/swift/swift-3-uicolor-utilities-random-hex-color-codes-random-uicolor/
+    func randomHexColorCode() -> String {
+        let a = ["1","2","3","4","5","6","7","8","9","a","b","c","d","e","f"];
+        return a[Int(arc4random_uniform(15))]
+            .appending(a[Int(arc4random_uniform(15))])
+            .appending(a[Int(arc4random_uniform(15))])
+            .appending(a[Int(arc4random_uniform(15))])
+            .appending(a[Int(arc4random_uniform(15))])
+            .appending(a[Int(arc4random_uniform(15))])
+    }
 }
 
 // MARK: UIImageView Extension
 // http://stackoverflow.com/a/37019507/737370
 extension UIImageView {
     public func imageFromServerURL(urlString: String, completion: @escaping () -> Void) {
-        
+
         URLSession.shared.dataTask(with: NSURL(string: urlString)! as URL, completionHandler: { (data, response, error) -> Void in
             
             if error != nil {
@@ -84,4 +96,3 @@ extension UIImageView {
         }).resume()
     }
 }
-
