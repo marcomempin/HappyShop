@@ -47,7 +47,7 @@ class ProductLoader {
         }
     }
     
-    func getProduct(of id: String, completion: @escaping () -> Product) {
+    func getProduct(of id: String, completion: @escaping () -> Void) {
         provider.request(.product(id: id)) { result in
             switch result {
             case let .success(response):
@@ -57,6 +57,8 @@ class ProductLoader {
                     let productJSON = productJSONDictionary["product"] as! [String : Any]
                     
                     self.product = Product.fromJSON(productJSON)
+                    
+                    completion()
                     
                 } catch {
                     
