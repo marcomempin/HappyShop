@@ -17,5 +17,5 @@ Simple Shopping Cart App implementation
 2. Open Terminal or your preferred terminal emulator.
 3. Change your director to the project.
 4. Run `pod install`.
-5. Run `open Happy\ Shop.xcworkspace`.
+5. Run `open Mangi.xcworkspace`.
 6. Enjoy the app.
